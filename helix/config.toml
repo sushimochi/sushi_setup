@@ -1,0 +1,50 @@
+theme = "base16_transparent"
+
+[keys.normal]
+"C-]" = "jump_view_right"
+"C-[" = "jump_view_left"
+
+"j" = "@<left>"
+"l" = "@<right>"
+"i" = "@<up>"
+"k" = "@<down>"
+
+"Cmd-j" = "move_prev_long_word_start"
+"Cmd-l" = "move_next_long_word_start"
+"Cmd-i" = "page_cursor_half_up"
+"Cmd-k" = "page_cursor_half_down"
+
+"u" = "yank"
+"o" = "paste_after"
+
+"Cmd-s" = ":write"
+
+"m" = "save_selection"
+"<" = "jump_backward"
+">" = "jump_forward"
+
+"z" = "select_mode"
+"x" = "insert_mode"
+"Cmd-/" = "toggle_comments"
+"R" = "replace_with_yanked"
+"r" = "replace"
+"f" = "search"
+
+"S-Cmd-z" = "redo"
+"Cmd-z" = "undo"
+
+[keys.select]
+"j" = "@<left>"
+"l" = "@<right>"
+"i" = "@<up>"
+"k" = "@<down>"
+
+"Cmd-j" = "move_prev_long_word_start"
+"Cmd-l" = "move_next_long_word_start"
+"Cmd-i" = "page_cursor_half_up"
+"Cmd-k" = "page_cursor_half_down"
+
+"u" = "yank"
+"o" = "paste_after"
+
+
