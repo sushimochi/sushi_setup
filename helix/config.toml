@@ -23,15 +23,17 @@ theme = "base16_transparent"
 "<" = "jump_backward"
 ">" = "jump_forward"
 
-"z" = "select_mode"
-"x" = "insert_mode"
+"s" = "select_mode"
+"a" = "insert_mode"
 "Cmd-/" = "toggle_comments"
-"R" = "replace_with_yanked"
-"r" = "replace"
+"r" = "replace_with_yanked"
 "f" = "search"
 
-"S-Cmd-z" = "redo"
-"Cmd-z" = "undo"
+"S-z" = "redo"
+"z" = "undo"
+
+"p" = "open_below"
+"P" = "open_above"
 
 [keys.select]
 "j" = "@<left>"
@@ -46,5 +48,4 @@ theme = "base16_transparent"
 
 "u" = "yank"
 "o" = "paste_after"
-
 
