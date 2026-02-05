@@ -1,5 +1,16 @@
 theme = "base16_transparent"
 
+[keys.insert]
+# insert mode can edit near of cursor only.
+# want to go far, change to normal mode.
+"Cmd-j" = "@<left>"
+"Cmd-l" = "@<right>"
+"Cmd-i" = "@<up>"
+"Cmd-k" = "@<down>"
+
+"Cmd-space" = "completion"
+"Cmd-/" = "toggle_comments"
+
 [keys.normal]
 "C-]" = "jump_view_right"
 "C-[" = "jump_view_left"
@@ -9,10 +20,14 @@ theme = "base16_transparent"
 "i" = "@<up>"
 "k" = "@<down>"
 
-"Cmd-j" = "move_prev_long_word_start"
-"Cmd-l" = "move_next_long_word_start"
-"Cmd-i" = "page_cursor_half_up"
-"Cmd-k" = "page_cursor_half_down"
+"Cmd-j" = "@<left>"
+"Cmd-l" = "@<right>"
+"Cmd-i" = "@<up>"
+"Cmd-k" = "@<down>"
+"S-j" = "move_prev_word_start"
+"S-l" = "move_next_word_start"
+"S-i" = "page_cursor_half_up"
+"S-k" = "page_cursor_half_down"
 
 "u" = "yank"
 "o" = "paste_after"
@@ -24,7 +39,7 @@ theme = "base16_transparent"
 ">" = "jump_forward"
 
 "s" = "select_mode"
-"a" = "insert_mode"
+"w" = "insert_mode"
 "Cmd-/" = "toggle_comments"
 "r" = "replace_with_yanked"
 "f" = "search"
@@ -35,17 +50,39 @@ theme = "base16_transparent"
 "p" = "open_below"
 "P" = "open_above"
 
+"c" = "copy_selection_on_next_line"
+"C" = "keep_primary_selection"
+
+"S-d" = "delete_selection"
+"d" = "delete_selection_noyank"
+
+
 [keys.select]
 "j" = "@<left>"
 "l" = "@<right>"
 "i" = "@<up>"
 "k" = "@<down>"
 
-"Cmd-j" = "move_prev_long_word_start"
-"Cmd-l" = "move_next_long_word_start"
-"Cmd-i" = "page_cursor_half_up"
-"Cmd-k" = "page_cursor_half_down"
+"Cmd-j" = "@<left>"
+"Cmd-l" = "@<right>"
+"Cmd-i" = "@<up>"
+"Cmd-k" = "@<down>"
+
+"S-j" = "move_prev_long_word_start"
+"S-l" = "move_next_long_word_start"
+"S-i" = "page_cursor_half_up"
+"S-k" = "page_cursor_half_down"
 
 "u" = "yank"
 "o" = "paste_after"
 
+"w" = "@b"
+"W" = "@B"
+
+"S-d" = "delete_selection"
+"d" = "delete_selection_noyank"
+
+[keys.normal.space]
+"u" = "yank_to_clipboard"
+"o" = "paste_clipboard_after"
+"r" = "replace_selections_with_clipboard"
